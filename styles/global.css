@@ -48,6 +48,11 @@ body{
   display: none;
 }
 
+img{
+  width: 100%;
+  object-fit: cover;
+}
+
 a{
   font: var(--span);
   text-decoration: none;
@@ -59,11 +64,27 @@ a:hover{
   color: var(--brand-color-light);
 }
 
+span{
+  background-color: var(--brand-color-dark);
+  display: block;
+  max-width: fit-content;
+  font: 500 .625rem/1.2 var(--ff-archivo);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  padding: .25rem .5rem;
+  border-radius: .25rem;
+  margin-bottom: .5rem;
+}
+
 @media (width >= 80em){
   .container{
     margin-inline: 2rem;
   }
   .desktop-only{
     display: initial;
+  }
+
+  .mobile-only{
+    display: none;
   }
 }

@@ -1,0 +1,39 @@
+header {
+    .container{
+        margin-inline: 1rem 0;
+    }
+  & #header {
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 1rem;
+  }
+  & nav {
+    gap: 2rem;
+    justify-content: space-between;
+    padding-block: .875rem;
+    white-space: nowrap;
+    border-block: 1px solid var(--stroke-color);
+  }
+}
+@media (width >= 80em) {
+  header {
+    #header {
+      margin-block: 1.25rem;
+      & div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font: 700 1rem/1.4 var(--ff-archivo);
+        color: var(--text-color-primary);
+      }
+    }
+    & nav{
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    & .container{
+        margin-inline: 2rem;
+    }
+  }
+}

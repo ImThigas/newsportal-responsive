@@ -35,6 +35,35 @@
 body{
     font: var(--paragraph);
     color: var(--text-color-secondary);
+  overflow-x: hidden;
 
     background-color: var(--bg-color);
+}
+
+.container{
+  margin-inline: 1rem;
+}
+
+.desktop-only{
+  display: none;
+}
+
+a{
+  font: var(--span);
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  text-decoration: none;
+  color: var(--brand-color-light);
+}
+
+@media (width >= 80em){
+  .container{
+    margin-inline: 2rem;
+  }
+  .desktop-only{
+    display: initial;
+  }
 }

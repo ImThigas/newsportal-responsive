@@ -1,0 +1,153 @@
+/* MOST-READ */
+#most-read {
+  display: grid;
+  border-top: 1px solid var(--stroke-color);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  & header {
+    margin-block: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: var(--span);
+    color: var(--text-color-secondary);
+    & a {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    & a:hover {
+      & svg {
+        & path {
+          fill: #60a5fa;
+        }
+      }
+    }
+  }
+
+  & .most-read-content {
+    flex-direction: column;
+    gap: 2rem;
+    & figure {
+      padding-bottom: 4.625rem;
+      position: relative;
+      & img {
+        height: 100%;
+      }
+
+      & span {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+      }
+    }
+  }
+
+  @media (width >= 80em) {
+    & .most-read-content {
+      flex-direction: row;
+      gap: 1rem;
+      & figura {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+/* HIGHLIGHTS SECTION */
+#highlights-section {
+  margin-bottom: 3.5rem;
+  & .highlights-content {
+    display: grid;
+    & .ai-highlights {
+      border-top: 1px solid var(--stroke-color);
+      padding-top: 0.75rem;
+      margin-bottom: 2rem;
+
+      & .ai-highlights-content {
+        display: grid;
+        gap: 2rem;
+        & figure {
+          display: flex;
+          gap: 1rem;
+          & img {
+            width: 5rem;
+            height: 5rem;
+          }
+          & figcaption {
+            & p {
+              font: var(--paragraph);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & header {
+    display: flex;
+    justify-content: space-between;
+    font: var(--span);
+    color: var(--text-color-secondary);
+    margin-bottom: 1.5rem;
+    padding-top: 0.75rem;
+
+    & a {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    & a:hover {
+      & svg {
+        & path {
+          fill: #60a5fa;
+        }
+      }
+    }
+  }
+
+  & section {
+    & .ad {
+      margin-bottom: 2rem;
+      position: relative;
+      & img:nth-child(2) {
+        width: 1.25rem;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+      }
+    }
+    & .spotlight {
+      display: grid;
+      gap: 2rem;
+      & figure {
+        display: flex;
+        gap: 0.9375rem;
+        & img {
+          width: 4.5rem;
+          height: 4.5rem;
+        }
+      }
+    }
+  }
+
+  @media (width >= 80em) {
+    margin-bottom: 5rem;
+    & .highlights-content {
+      grid-template-columns: 1.5fr 1fr;
+      gap: 2rem;
+      & .ai-highlights {
+        & .ai-highlights-content {
+          & figure {
+            display: flex;
+            flex-direction: row-reverse;
+            & img {
+              width: 11rem;
+              height: 11rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

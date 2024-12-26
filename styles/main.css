@@ -9,15 +9,6 @@
       position: absolute;
       padding: 1rem;
 
-      & h1 {
-        font: var(--h1);
-        color: var(--text-color-primary);
-      }
-
-      & h2 {
-        font: var(--h2);
-        color: var(--text-color-primary);
-      }
     }
     &::before {
       content: "";

@@ -29,15 +29,34 @@
     --h2: 800 1rem/1.4 var(--ff-archivo);
     --h3: 800 .875rem/1.4 var(--ff-archivo);
     --span: 600 .875rem/1.45 var(--ff-archivo);
-    --paragraph:.875/1.6 var(--ff-archivo);
+    --paragraph: .875rem/1.6 var(--ff-archivo);
 }
 
 body{
     font: var(--paragraph);
     color: var(--text-color-secondary);
-  overflow-x: hidden;
+    overflow-x: hidden;
 
     background-color: var(--bg-color);
+}
+
+html{
+  overflow-x: hidden;
+}
+
+h1 {
+  font: var(--h1);
+  color: var(--text-color-primary);
+}
+
+h2 {
+  font: var(--h2);
+  color: var(--text-color-primary);
+}
+
+h3{
+  font: var(--h3);
+  color: var(--text-color-primary);
 }
 
 .container{
@@ -81,7 +100,7 @@ span{
     margin-inline: 2rem;
   }
   .desktop-only{
-    display: initial;
+    display: block;
   }
 
   .mobile-only{

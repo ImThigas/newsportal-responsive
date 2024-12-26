@@ -38,6 +38,8 @@ body{
     overflow-x: hidden;
 
     background-color: var(--bg-color);
+    max-width: 80rem;
+    margin-inline: auto;
 }
 
 html{

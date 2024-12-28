@@ -17,7 +17,7 @@ O **newsportal-responsive** é uma refatoração do projeto anterior **newsporta
 - **Google Fonts**: Tipografia personalizada.
 
 ## Parte do Desafio
-Este projeto faz parte de uma série de refatorações, incluindo:  
+Este projeto é um dos três criados no desafio de refatoração do curso **Fullstack** da **Rocketseat**:  
 - [Travelgram Responsive](https://github.com/ImThigas/travelgram-responsive)  
 - [Enrollment Form Responsive](https://github.com/ImThigas/enrollment-form-responsive)
 
